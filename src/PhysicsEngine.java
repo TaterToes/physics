@@ -201,7 +201,7 @@ public class PhysicsEngine extends JPanel {
                 floorCollision = true;
 
                 // if theta, impulse, and omega are small, just stop it from jiggling.
-                if (Math.abs(omega) < 4
+                if (Math.abs(omega) < 10
                         && Math.abs(theta % (Math.PI / 2)) < 0.005) {
                     theta = Math.round(theta / (Math.PI / 2)) * (Math.PI / 2);
                     omega = 0;
